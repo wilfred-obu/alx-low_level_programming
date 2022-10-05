@@ -35,6 +35,7 @@ char *argstostr(int ac, char **av)
 
 	while (ac--)
 		sum += (len(av[ac]) + 1);
+	new_string = (char *) malloc(sum + 1);
 
 	if (new_string != NULL)
 	{
